@@ -1,0 +1,41 @@
+.tab {
+  background-color: #29a5fb;
+  align-items: center;
+  border-radius: 20px 20px 0px 0px;
+  max-width: 1125px;
+  align-self: center;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.tab .tablinks {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  margin: 15px;
+  text-align: center;
+}
+.tab .tablinks::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  background-color: black;
+}
+.tab .tablinks:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.tab .tablinks:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=navigation.css.map */

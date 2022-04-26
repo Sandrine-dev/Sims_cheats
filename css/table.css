@@ -1,0 +1,85 @@
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+table img {
+  width: 55px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100%;
+}
+table th {
+  padding: 20px 15px;
+  text-align: left;
+  font-size: 20px;
+}
+table td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 20px;
+  border-bottom: solid 1px rgba(72, 205, 34, 0.3);
+}
+table tbody {
+  border: 1px solid rgba(72, 205, 34, 0.3);
+}
+table thead {
+  background: linear-gradient(170deg, rgba(72, 205, 34, 0.5) 20%, rgba(72, 205, 34, 0.3) 20%, rgba(72, 205, 34, 0.3) 40%, rgba(200, 240, 189, 0.5) 40%, rgba(200, 240, 189, 0.5) 60%, rgba(244, 252, 242, 0.4) 60%, rgba(244, 252, 242, 0.4) 80%, rgba(247, 253, 246, 0.5) 80%), linear-gradient(35deg, rgba(72, 205, 34, 0.9) 20%, rgba(72, 205, 34, 0.5) 20%, rgba(72, 205, 34, 0.5) 40%, rgba(244, 252, 242, 0.4) 40%, rgba(244, 252, 242, 0.4) 60%, rgba(247, 253, 246, 0.3) 60%, rgba(247, 253, 246, 0.3) 80%, rgba(72, 205, 34, 0.2) 80%), linear-gradient(-75deg, rgba(200, 240, 189, 0.5) 20%, rgba(72, 205, 34, 0.8) 20%, rgba(72, 205, 34, 0.8) 40%, rgba(72, 205, 34, 0.9) 40%, rgba(72, 205, 34, 0.9) 60%, rgba(244, 252, 242, 0.4) 60%, rgba(244, 252, 242, 0.4) 80%, rgba(247, 253, 246, 0.5) 80%), linear-gradient(-15deg, rgba(72, 205, 34, 0.5) 20%, rgba(72, 205, 34, 0.3) 20%, rgba(72, 205, 34, 0.3) 40%, rgba(247, 253, 246, 0.5) 40%, rgba(247, 253, 246, 0.5) 60%, rgba(72, 205, 34, 0.3) 60%, rgba(72, 205, 34, 0.3) 80%, rgba(178, 206, 254, 0.1) 80%);
+  background-color: rgba(72, 205, 34, 0.5);
+  background-size: 100% 100%;
+  min-height: 100%;
+}
+table thead tr {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tbl-content {
+  height: 600px;
+  margin-top: 0px;
+  overflow-x: hidden;
+}
+
+.short_table {
+  height: auto;
+  margin-top: 0px;
+  overflow-x: hidden;
+}
+
+.table_img tr td:last-child {
+  text-align: center;
+}
+
+.table_on_code tr th:last-child, td:last-child {
+  width: 200px;
+}
+
+.table_on_code tr th:first-child, td:first-child {
+  width: 200px;
+}
+
+.table_more_code tr td, .table_more_code tr th {
+  width: auto;
+}
+
+.table_more_code tr td:nth-child(2), .table_more_code tr th:nth-child(2) {
+  width: 200px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.table_code {
+  margin-bottom: 55px;
+}
+
+/*# sourceMappingURL=table.css.map */
