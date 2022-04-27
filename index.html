@@ -33,7 +33,7 @@
             <div class="content">
                 <div class="first_div">
                     <h3>Première Etape</h3>
-                    <p>Votre premier etape est d'ouvrire la console, quand vous êtes en jeux. Il vous suffira d'être dans votre partie et d'appuyer sur les touches Shift(ou Maj suivant votre clavier) Ctrl et la lettre C. Une console apparaitra alors en haut à gauche de votre jeux</p>
+                    <p>Votre premier étape est d'ouvrir la console, quand vous êtes en jeux. Il vous suffira d'être dans votre partie et d'appuyer sur les touches Shift(ou Maj suivant votre clavier) Ctrl et la lettre C. Une console apparaitra alors en haut à gauche de votre jeux</p>
                     <div class="keyboard">
                         <img src="./asset/Shift.png" alt="Shift">  <img src="./asset/Ctrl.png" alt="Ctrl">  <img src="./asset/letter_c.png" alt="letter_c">
                     </div>
@@ -41,7 +41,7 @@
                 <div class="second_div">
                     <h3>Deuxième Etape</h3>
                     <p>Avant de renter certain code dans la console il vous faudra les activer, pour ceci il vous suffira de rentrer le code <span class="code">"TestingCheats true"</span>
-                    Après avoir entrer la commande une ligne apparaitra en dessous <span class="code">Cheats are enable</span></p>
+                    Après avoir entré la commande une ligne apparaitra en dessous <span class="code">Cheats are enable</span></p>
                 </div>
             </div>
             
@@ -60,6 +60,7 @@
             <div class="tablinks" onclick="openCheats(event, 'works')">Travail <i class="fas fa-briefcase"></i></div>
             <!--<div class="tablinks" onclick="openCheats(event, 'construction')">Construction <i class="fas fa-home"></i></div>-->
             <div class="tablinks" onclick="openCheats(event, 'aspiration')">Aspiration <i class="fas fa-star"></i></div>
+            <div class="tablinks" onclick="openCheats(event, 'traits')">Traits <i class="fas fa-user-circle"></i></div>
         </div>
 
         <div id="competence" class="tabcontent">
@@ -404,7 +405,7 @@
                                 </tr>
                                 <tr>
                                     <td>Communication</td>
-                                    <td>tats.set_skill_level Skill_Toddler_Communication <span>X</span></td>
+                                    <td>stats.set_skill_level Skill_Toddler_Communication <span>X</span></td>
                                     <td><img src="./asset/pack/Base_game.png"></td>
                                 </tr>
                                 <tr>
@@ -474,6 +475,10 @@
                                 <tr>
                                     <td>Sur la map vous pouvez avoir n'importe qu'elle maison gratuitement</td>
                                     <td>freerealEstate on (off) </td>
+                                </tr>
+                                <tr>
+                                    <td>Vous ne payerais plus de facture</td>
+                                    <td>households.autopay_bill </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -798,6 +803,341 @@
                 </div>
             </div>
         </div>
+
+        <div id="traits" class="tabcontent">
+            <div class="content">
+                <div class="explication">
+                    <p>La traits de caractère du CAS sont simplement au nombre de trois, parfois ce n'est pas assez pour définir la personnalité du sims <br>
+                       Vous avez aussi la possibilité de les enlever! il vous suffira de changer "equipe" par <span>remove</span>!
+                    </p>
+                </div>
+                <h3 class="table_on_code">Les traits liées <span class="clip-text_one">à la carrière</span></h3>
+                <div class="table_code table_on_code table_img">
+                    <div class="tbl-header">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Carrière</th>
+                                    <th>Code</th>
+                                    <th>Pack</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table >
+                            <tbody>
+                                <tr>
+                                    <td>Agent secret</td>
+                                    <td>careers.promote secretAgent</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Artiste</td>
+                                    <td>careers.promote entertainer</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Astronaute</td>
+                                    <td>careers.promote astronaut</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Athlete</td>
+                                    <td>career.promote athletic</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Auteur</td>
+                                    <td>careers.promote adult_writer</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Concepteur civil</td>
+                                    <td>careers.promote careers_Adult_CivilDesigner </td>
+                                    <td><img src="./asset/pack/Eco_life_style.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Criminelle</td>
+                                    <td>careers.promote criminal</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Critique</td>
+                                    <td>careers.promote careers_adult_Critic</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Critique artistique</td>
+                                    <td>traits.equip_trait trait_hidden_career_critic_thrifty</td>
+                                    <td><img src="./asset/pack/get_to_work.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Culinaire</td>
+                                    <td>careers.promote culinary</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h3 class="table_on_code">Les traits liées <span class="clip-text_one">à l'enfance</span></h3>
+                <div class="table_code table_on_code">
+                    <div class="tbl-header">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>fonction</th>
+                                    <th>Code</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content short_table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Bonne manière</td>
+                                    <td>traits.equip_trait GoodManners</td>
+                                </tr>
+                                <tr>
+                                    <td>Mauvaise manière</td>
+                                    <td>traits.equip_trait BadManners</td>
+                                </tr>
+                                <tr>
+                                    <td>Responsable</td>
+                                    <td>traits.equip_trait LifeSkills_Responsible</td>
+                                </tr>
+                                <tr>
+                                    <td>Irresponsable</td>
+                                    <td>traits.equip_trait Irresponsible</td>
+                                </tr>
+                                 <tr>
+                                    <td>Médiateur</td>
+                                    <td>traits.equip_trait Mediator</td>
+                                </tr>
+                                <tr>
+                                    <td>Enclin au conflits</td>
+                                    <td>traits.equip_trait Argumentative</td>
+                                </tr>
+                                <tr>
+                                    <td>Compatissant</td>
+                                    <td>traits.equip_trait Compassionate</td>
+                                </tr>
+                                <tr>
+                                    <td>Insensible</td>
+                                    <td>traits.equip_trait LifeSkills_Unfeeling</td>
+                                </tr>
+                                <tr>
+                                    <td>Contrôle des émotions</td>
+                                    <td>traits.equip_trait EmotionalControl</td>
+                                </tr>
+                                <tr>
+                                    <td>Émotions incontrôlées</td>
+                                    <td>traits.equip_trait uncontrolled</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h3 class="table_on_code">Les traits liées <span class="clip-text_one">à l'aspiration</span> adulte</h3>
+                <div class="table_code table_on_code table_img">
+                    <div class="tbl-header">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Traits</th>
+                                    <th>Code</th>
+                                    <th>Pack</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table>
+                            <tbody>
+                                 <tr>
+                                    <td>Aimé (Popularité)</td>
+                                    <td>traits.equip_trait Legendary</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Astucieux (Fortune)</td>
+                                    <td>traits.equip_trait Invested</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Bricoleur (Connaissance)</td>
+                                    <td>traits.equip_trait TheKnack</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Chasseur de trésor (Nature)</td>
+                                    <td>traits.equip_trait Trait_JungleExplorer</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Chef frais (Nourriture)</td>
+                                    <td>traits.equip_trait FreshChef</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Croqueur de sims (Amour)</td>
+                                    <td>traits.equip_trait Player</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Econome (Fortune)</td>
+                                    <td>traits.equip_trait ValuedCustomer</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>En couple (Amour)</td>
+                                    <td>traits.equip_trait EternalBond</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Expert (Nature)</td>
+                                    <td>traits.equip_trait Appraiser</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Expressionniste (Créativité)</td>
+                                    <td>traits.equip_trait Expressionistic</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Fromage fondu (Nourriture)</td>
+                                    <td>traits.equip_trait Melt Master</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Grande longévité (Sport)</td>
+                                    <td>traits.equip_trait Longevity</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Hilarant (Popularité)</td>
+                                    <td>traits.equip_trait Hilarious</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                 <tr>
+                                    <td>Hôte parfait (Popularité)</td>
+                                    <td>traits.equip_trait PerfectHost</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Manipulateur (Déviance)</td>
+                                    <td>traits.equip_trait Mastermind</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Matriarche (Famille)</td>
+                                    <td>traits.equip_trait Matriarch</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Musicien envoûtant (Créativité)</td>
+                                    <td>traits.equip_trait Piper</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Naturaliste (Nature)</td>
+                                    <td>traits.equip_trait OneWithNature</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Persécuteur (Déviance)</td>
+                                    <td>traits.equip_trait Bane</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Poétique (Créativité)</td>
+                                    <td>traits.equip_trait EpicPoet</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Pro des potions (Nourriture)</td>
+                                    <td>traits.equip_trait PotionMaster</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Pro du web (Connaissance)</td>
+                                    <td>traits.equip_trait WebMaster</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Professoral (Connaissance)</td>
+                                    <td>traits.equip_trait Chronicler</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Sérénité du pêcheur (Nature)</td>
+                                    <td>traits.equip_trait AnglersTranquility</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Survivant (Nature)</td>
+                                    <td>traits.equip_trait Survivalist</td>
+                                    <td><img src="./asset/pack/Outdoor_retreat.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Vie par procuration (Famille)</td>
+                                    <td>traits.equip_trait LivingVicariously</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h3 class="table_on_code">Les traits liées <span class="clip-text_one">à l'aspiration</span> enfant</h3>
+                <div class="table_code table_on_code table_img">
+                    <div class="tbl-header">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Traits</th>
+                                    <th>Code</th>
+                                    <th>Pack</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content short_table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Doué mentalement</td>
+                                    <td>traits.equip_trait MentallyGifted</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Doué socialement</td>
+                                    <td>traits.equip_trait SociallyGifted</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Physique avantageux</td>
+                                    <td>traits.equip_trait PhysicallyGifted</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                                <tr>
+                                    <td>Génie créatif</td>
+                                    <td>traits.equip_trait CreativelyGifted</td>
+                                    <td><img src="./asset/pack/Base_game.png"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
 
         <!--
 
